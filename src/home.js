@@ -11,7 +11,16 @@ export default function home() {
 
   const imgcaption = document.createElement('p');
   imgcaption.classList.add('imgcaption');
-  imgcaption.innerHTML ='Photo by <a href="https://unsplash.com/@jaywennington?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jay Wennington</a> on <a href="https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
+  imgcaption.textContent ='Photo by ';
+  const photographer = document.createElement('a');
+  photographer.href = "https://unsplash.com/@jaywennington?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash";
+  photographer.textContent = "Jay Wennington";
+  imgcaption.appendChild(photographer);
+  imgcaption.insertAdjacentText('beforeend', " on ");
+  const unsplash = document.createElement('a');
+  unsplash.href = "https://unsplash.com/photos/dish-on-white-ceramic-plate-N_Y88TWmGwA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash";
+  unsplash.textContent = 'UnSplash';
+  imgcaption.appendChild(unsplash);
   imageContainer.appendChild(imgcaption);
 
   element.appendChild(imageContainer);

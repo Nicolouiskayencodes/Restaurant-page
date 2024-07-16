@@ -11,7 +11,7 @@ function homecontent() {
   aboutButton.classList.remove('tab');
   homeButton.classList.add('tab');
   const content = document.querySelector('#content');
-  content.innerHTML = ''
+  content.textContent = ''
   const homect = home();
   content.appendChild(homect);
 }
@@ -22,7 +22,7 @@ function menucontent() {
   aboutButton.classList.remove('tab');
   menuButton.classList.add('tab');
   const content = document.querySelector('#content');
-  content.innerHTML = '';
+  content.textContent = '';
   const menuct = menu();
   content.appendChild(menuct);
 }
@@ -33,7 +33,7 @@ function aboutcontent() {
   menuButton.classList.remove('tab');
   aboutButton.classList.add('tab');
   const content = document.querySelector('#content');
-  content.innerHTML = ''
+  content.textContent = ''
 }
 
 homeButton.addEventListener("click", function() {homecontent()});
