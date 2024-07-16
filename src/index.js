@@ -1,5 +1,6 @@
 import  home  from "./home";
 import menu from "./menu";
+import about from "./about";
 
 const homeButton = document.querySelector('#home');
 const menuButton = document.querySelector('#menu');
@@ -34,6 +35,8 @@ function aboutcontent() {
   aboutButton.classList.add('tab');
   const content = document.querySelector('#content');
   content.textContent = ''
+  const aboutct = about();
+  content.appendChild(aboutct);
 }
 
 homeButton.addEventListener("click", function() {homecontent()});

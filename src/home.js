@@ -32,7 +32,7 @@ export default function home() {
 
   const info = document.createElement('p');
   info.classList.add('info');
-  info.textContent = 'Our cozy restaurant provides a fine dining experience at unbeatable prices. Experience our exquisite menu with the whole family! Located at 123456 Downtown Blvd, Big Town City.'
+  info.textContent = 'Our cozy restaurant provides a fine dining experience at unbeatable prices. Experience our exquisite menu with the whole family! Healthy and delicious, serving lunch and dinner 6 days per week.'
   element.appendChild(info);
 
   const hours = document.createElement('h2');
