@@ -1,6 +1,6 @@
 import image from './dining.jpg';
 
-export function home() {
+export default function home() {
   const element = document.createElement('div');
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('img-container');
@@ -23,8 +23,37 @@ export function home() {
 
   const info = document.createElement('p');
   info.classList.add('info');
-  info.textContent = 'Our cozy restaurant provides a fine dining experience at unbeatable prices. Experience our exquisite menu with the whole family! We are located at 123456 Downtown Blvd and open Tues-Sat 11:00 AM to 10:00 PM'
+  info.textContent = 'Our cozy restaurant provides a fine dining experience at unbeatable prices. Experience our exquisite menu with the whole family! Located at 123456 Downtown Blvd, Big Town City.'
   element.appendChild(info);
+
+  const hours = document.createElement('h2');
+  hours.classList.add('hours');
+  hours.textContent = 'Hours';
+  element.appendChild(hours);
+
+  const schedule = document.createElement('ul');
+  const sunday = document.createElement('li');
+  sunday.textContent = 'Sunday: 11:00 AM - 11:00 PM';
+  schedule.appendChild(sunday);
+  const monday = document.createElement('li');
+  monday.textContent = 'Monday: Closed';
+  schedule.appendChild(monday);
+  const tuesday = document.createElement('li');
+  tuesday.textContent = 'Tuesday: 11:00 AM - 10:00 PM';
+  schedule.appendChild(tuesday);
+  const wednesday = document.createElement('li');
+  wednesday.textContent = 'Wednesday: 11:00 AM - 10:00 PM';
+  schedule.appendChild(wednesday);
+  const thursday = document.createElement('li');
+  thursday.textContent = 'Thursday: 11:00 AM - 10:00 PM';
+  schedule.appendChild(thursday);
+  const friday = document.createElement('li');
+  friday.textContent = 'Friday: 11:00 AM - 11:00 PM';
+  schedule.appendChild(friday);
+  const saturday = document.createElement('li');
+  saturday.textContent = 'Saturday: 11:00 AM - 11:00 PM';
+  schedule.appendChild(saturday);
+  element.appendChild(schedule);
 
   return element;
 }

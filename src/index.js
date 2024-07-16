@@ -1,4 +1,5 @@
-import { home } from "./home";
+import  home  from "./home";
+import menu from "./menu";
 
 const homeButton = document.querySelector('#home');
 const menuButton = document.querySelector('#menu');
@@ -21,7 +22,9 @@ function menucontent() {
   aboutButton.classList.remove('tab');
   menuButton.classList.add('tab');
   const content = document.querySelector('#content');
-  content.innerHTML = ''
+  content.innerHTML = '';
+  const menuct = menu();
+  content.appendChild(menuct);
 }
 
 function aboutcontent() {
