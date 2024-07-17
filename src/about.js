@@ -4,7 +4,7 @@ export default function about() {
   contact.classList.add('contact');
 
   const title = document.createElement('h1');
-  title.classList.add('title');
+  title.classList.add('headline');
   title.textContent = 'The Cozy Camper Bistro'
   contact.appendChild(title);
 
@@ -24,6 +24,11 @@ export default function about() {
   contact.appendChild(location);
 
   element.appendChild(contact);
+
+  const hours = document.createElement('h2');
+  hours.classList.add('hours');
+  hours.textContent = 'Hours';
+  element.appendChild(hours);
 
   const schedule = document.createElement('ul');
   const sunday = document.createElement('li');
