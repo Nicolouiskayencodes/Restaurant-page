@@ -3,6 +3,7 @@ import  home  from "./home";
 import menu from "./menu";
 import about from "./about";
 
+function index() {
 const homeButton = document.querySelector('#home');
 const menuButton = document.querySelector('#menu');
 const aboutButton = document.querySelector('#about');
@@ -45,3 +46,5 @@ menuButton.addEventListener("click", function() {menucontent()});
 aboutButton.addEventListener("click", function() {aboutcontent()});
 
 homecontent();
+}
+index();
